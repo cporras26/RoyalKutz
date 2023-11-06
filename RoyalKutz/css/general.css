@@ -1,0 +1,29 @@
+﻿/*VARIABLES*/
+:root {
+    --color-white: #fff;
+    
+    --color-primary-light: #d7b892;
+    --color-primary: #c69963;
+    --color-primary-dark: #b28451;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+ul{
+    list-style: none;
+}

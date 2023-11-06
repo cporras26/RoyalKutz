@@ -1,0 +1,92 @@
+﻿/*
+HEADER
+*/
+
+.header__container{
+    height: 70vh;
+    background-image: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6)), 
+    url("../img/heroBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem;
+    gap: 1.2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.logo{
+    color: var(--color-white);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.logo--gold{
+    color: var(--color-primary-light);
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--color-primary-light)    
+}
+
+.nav-link--active:link,
+.nav-link--active:visited
+{
+    color: var(--color-primary-light);
+    transform: scaleX(1.2) translateY(-0.4rem);
+}
+
+.actions{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    color:  var(--color-white);
+    cursor: pointer;
+}
+
+.icon-cart__box{
+    position: relative;
+}
+
+.icon--cart__notifications {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: -1rem;
+    right: -0.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
