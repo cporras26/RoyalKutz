@@ -5,6 +5,9 @@
     --color-primary-light: #d7b892;
     --color-primary: #c69963;
     --color-primary-dark: #b28451;
+
+    --color-grey-lighter:#999;
+    --color-grey:#555
 }
 
 * {
@@ -21,9 +24,28 @@ body {
     font-family: 'Raleway', serif;
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: var(--color-grey);
 }
 
 ul{
     list-style: none;
+}
+
+.button{
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--color-grey-lighter);
+    color: var(--color-white);
+    letter-spacing: 0.1rem;
+    
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover{
+    background-color: var(--color-primary);
+    border: 1px solid transparent;
+    transform: translateY(-0.4rem);
 }
